@@ -137,9 +137,9 @@ iPC1469 = setParam(iPC1469,'obj',{'bmOUT'},1);
 iPC1469cobra3 = ravenCobraWrapper(iPC1469);
 %[grRatio, grRateKO, grRateWT, hasEffect, delRxns, fluxSolution] = singleGeneDeletion(iPC1469cobra3);
 %[massImbalance, imBalancedMass, imBalancedCharge, imBalancedRxnBool, elements, missingFormulaeBool, balancedMetBool] = checkMassChargeBalance(iPC1469cobra3);
-outmodel = writeCbModel(iPC1469cobra3, 'format','sbml', 'fileName', 'CbModel/iPC1469cobra3.xml')
-outmodel = writeCbModel(iPC1469cobra3, 'format','mat', 'fileName', 'CbModel/iPC1469cobra3.mat')
+outmodel = writeCbModel(iPC1469cobra3, 'format','sbml', 'fileName', 'model/xml/iPC1469cobra3.xml')
+outmodel = writeCbModel(iPC1469cobra3, 'format','mat', 'fileName', 'model/mat/iPC1469cobra3.mat')
 
 
-iPC1469raven4 = importModel('CbModel/iPC1469cobra3.xml');
+iPC1469raven4 = importModel('model/xml/iPC1469cobra3.xml')
 exportForGit(iPC1469raven4,'iPC1469raven4');
