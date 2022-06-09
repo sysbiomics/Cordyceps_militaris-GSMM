@@ -12,19 +12,19 @@ Sphingolipid, _Cordyceps militaris_, Genome-scale modeling, Metabolic footprinti
 **GEM Category:** Species; **Utilisation:** Predictive simulation; **Field:** Genome-scale modeling; Metabolic
 engineering; **Type of Model:** Reconstruction and refinement; **Taxonomy:** _Cordyceps_militaris_ ; **Metabolic System:** General Metabolism; **Condition:** Synthetic media;
 
-- Reference: Genome-Scale Model Integration of Exometabolome and Transcriptome Unveils Carbon Assimilation Towards Sphingolipid Biosynthetic Capability of _Cordyceps militaris_. Cheawchanlertfa P, Chitcharoen S, Raethong N, Liu Q, Chumnanpuen P, Soommat P, Song Y, Laoteng K and Vongsangnak W. (under review)
+- Reference: Genome-Scale Model Integration of Exometabolome and Transcriptome Unveils Carbon Assimilation Towards Sphin-golipid Biosynthetic Capability of _Cordyceps militaris_. Cheawchanlertfa P, Chitcharoen S, Raethong N, Liu Q, Chumnanpuen P, Soommat P, Song Y, Laoteng K and Vongsangnak W. (under review)
 
 - Pubmed ID: 
 
 - PMC ID: 
 
-- Last update: 2022-05-25
+- Last update: 2022-06-09
 
 - The model contains:
 
 | Taxonomy | Model Name | Reactions | Metabolites| Genes |
 | ------------- |:-------------:|:-------------:|:-------------:|-----:|
-| _Cordyceps militaris_ | iPC1469 | 1,904 | 1,230 | 1,469 |
+| _Cordyceps militaris_ | iPC1469 | 1,905 | 1,229 | 1,469 |
 
 This repository is administered by Nachon Raethong ([@sysbiomics](https://github.com/sysbiomics))
 
