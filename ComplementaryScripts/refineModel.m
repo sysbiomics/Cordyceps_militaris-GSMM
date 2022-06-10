@@ -140,6 +140,11 @@ iPC1469cobra3 = ravenCobraWrapper(iPC1469);
 outmodel = writeCbModel(iPC1469cobra3, 'format','sbml', 'fileName', 'model/xml/iPC1469cobra3.xml')
 outmodel = writeCbModel(iPC1469cobra3, 'format','mat', 'fileName', 'model/mat/iPC1469cobra3.mat')
 
-
+%% BiGG format
 iPC1469raven4 = importModel('model/xml/iPC1469cobra3.xml')
+
+
+
 exportForGit(iPC1469raven4,'iPC1469raven4');
+
+
