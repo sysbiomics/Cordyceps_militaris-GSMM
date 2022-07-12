@@ -24,7 +24,7 @@ engineering; **Type of Model:** Reconstruction and refinement; **Taxonomy:** _Co
 
 | Taxonomy | Model Name | Reactions | Metabolites| Genes |
 | ------------- |:-------------:|:-------------:|:-------------:|-----:|
-| _Cordyceps militaris_ | iPC1469 | 1,905 | 1,229 | 1,469 |
+| _Cordyceps militaris_ | iPC1469 | 1,904 | 1,229 | 1,469 |
 
 This repository is administered by Nachon Raethong ([@sysbiomics](https://github.com/sysbiomics))
 
