@@ -3,7 +3,7 @@ cd '/Users/nachonase/Documents/GitHub/Cordyceps_militaris-GSMM';
 initCobraToolbox;
 %setRavenSolver('cobra');
 %% STEP 0: Load the model
-load('model/mat/iPC1469.mat');
+model=importExcelModel('modelFiles/revised_iPC1469.xlsx')
 iPC1469Model = model;
 %% STEP 5: MODEL VALIDATION
 %% 5.1: Growth capability
@@ -42,18 +42,15 @@ iPC1469 = setParam(iPC1469Model,'ub',{'glcIN'},[25]);
 iPC1469 = setParam(iPC1469,'eq',{'bmOUT'},[1]);
 
 finalValidateModel0 = setParam(iPC1469,'obj',{'cordycepinOUT'},1);
-finalValidateModel1 = setParam(iPC1469,'obj',{'exc C16 sphinganine'},1);
-finalValidateModel2 = setParam(iPC1469,'obj',{'exc C17 sphinganine'},1);
+finalValidateModel1 = setParam(iPC1469,'obj',{'exc sphinganine'},1);
 finalValidateModel3 = setParam(iPC1469,'obj',{'exc phytosphingosine'},1);
-finalValidateModel4 = setParam(iPC1469,'obj',{'exc C17 sphingosine'},1);
+finalValidateModel4 = setParam(iPC1469,'obj',{'exc sphingosine'},1);
 
 sol0 = solveLP(finalValidateModel0,1);
 fprintf(['production rate of cordycepin' '\t' num2str(sol0.f*-1) ' mmol/g DW/h' '\n']);
 sol1 = solveLP(finalValidateModel1,1);
-fprintf(['production rate of C16 sphinganine' '\t' num2str(sol1.f*-1) ' mmol/g DW/h' '\n']);
-sol2 = solveLP(finalValidateModel2,1);
-fprintf(['production rate of C17 sphinganine' '\t' num2str(sol2.f*-1) ' mmol/g DW/h' '\n']);
+fprintf(['production rate of sphinganine' '\t' num2str(sol1.f*-1) ' mmol/g DW/h' '\n']);
 sol3 = solveLP(finalValidateModel3,1);
 fprintf(['production rate of phytosphingosine' '\t' num2str(sol3.f*-1) ' mmol/g DW/h' '\n']);
 sol4 = solveLP(finalValidateModel4,1);
-fprintf(['production rate of C17 sphingosine' '\t' num2str(sol4.f*-1) ' mmol/g DW/h' '\n']);
+fprintf(['production rate of sphingosine' '\t' num2str(sol4.f*-1) ' mmol/g DW/h' '\n']);
